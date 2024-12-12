@@ -1,0 +1,137 @@
+.container {
+    width: 100%;
+}
+
+.eventHeader {
+    margin-top: 4rem;
+    width: 100%;
+    height: 60svh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    h2 {
+        margin-left: 80px;
+        margin-bottom: 50px;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        font-style: italic;
+    }
+}
+
+.eventDetails {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    border: 1px solid #cccccc80;
+    border-radius: 20px;
+    padding: 20px 40px;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .eventDetailsInfo {
+        list-style-type: none;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    p {
+        width: 200px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    span {
+        flex-grow: 1;
+        border: 1px solid #cccccc80;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 500;
+
+        &.eventTitle {
+            border: none;
+            font-size: 26px;
+            padding-left: 0;
+            font-weight: 600;
+        }
+    }
+}
+
+.additionalContent {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    border: 1px solid #cccccc80;
+    border-radius: 20px;
+    padding: 20px 40px;
+
+    .customerControls {
+
+        ul {
+            list-style-type: none;
+
+
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 20px;
+
+                p {
+                    width: 200px;
+                }
+
+                strong {
+                    font-size: 18px;
+                    font-weight: 400    ;
+                }
+
+                .buyTicketButton {
+                    padding: 10px 20px;
+                    background-color: #00e676;
+                    border: 1px solid transparent;
+                    box-shadow: inset 0 0 0 1px #4f4f4f15;
+                    border-radius: 10px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .vendorControls {
+
+        button {
+            padding: 10px 20px;
+            background-color: #00e676;
+            border: 1px solid transparent;
+            box-shadow: inset 0 0 0 1px #4f4f4f15;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}

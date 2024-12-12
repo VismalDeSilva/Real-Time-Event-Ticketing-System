@@ -1,0 +1,57 @@
+.numberInputContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 200px;
+  
+    &__button {
+      background-color: #f0f0f0;
+      border: none;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #e0e0e0;
+      }
+  
+      &:active {
+        background-color: #d0d0d0;
+      }
+  
+      &Decrement {
+        border-right: 1px solid #ddd;
+      }
+  
+      &Increment {
+        border-left: 1px solid #ddd;
+      }
+    }
+  
+    &__input {
+      border: none;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      appearance: textfield;
+      -moz-appearance: textfield;
+  
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+  
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      }
+    }
+  }

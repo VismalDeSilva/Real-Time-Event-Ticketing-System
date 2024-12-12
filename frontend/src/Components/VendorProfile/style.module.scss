@@ -1,0 +1,140 @@
+.container {
+    // width: 100vw;
+    margin-top: 5rem;
+}
+
+.vendorContainer {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p{
+                width: 300px;
+            }
+
+            span {
+                flex-grow: 1;
+                border: 1px solid #cccccc80;
+                border-radius: 7px;
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    .buttonContainer {
+        // width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        button {
+            &:hover {
+                // background-color: #b5d9ee80;
+                scale: 1.01;
+            }
+
+            &:active {
+                // background-color: #b5d9ee80;
+                scale: 0.995;
+            }
+        }
+    }
+
+    .createEvent {
+        width: 400px;
+        margin: 30px auto;
+        padding: 10px 20px;
+        background-color: #00e676;
+        border: 1px solid transparent;
+        box-shadow: inset 0 0 0 1px #4f4f4f15;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .eventsContainer {
+        width: 100%;
+        border: 1px solid #cccccc80;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        // margin-bottom: 30px;
+        padding: 20px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .event {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            width: 100%;
+            border: 1px solid #cccccc80;
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+            .buttonContainer {
+                display: flex;
+                gap: 10px;
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #00e676;
+                border: 1px solid transparent;
+                box-shadow: inset 0 0 0 1px #4f4f4f15;
+                // border: none;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
+
+    
+
+    .logoutButton {
+        width: 400px;
+        // width: 100%;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #ff4848;
+        border: 1px solid transparent;
+        box-shadow: inset 0 0 0 1px #4f4f4f15;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
